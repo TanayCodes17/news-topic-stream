@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# Fitted model objects are binary
+*.pkl binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

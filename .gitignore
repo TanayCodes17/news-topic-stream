@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit/
+
+# Runtime data (regenerated every run, never part of the submission)
+data/live.db
+data/live.db-wal
+data/live.db-shm
+data/test_*.db
+data/test_*.db-wal
+data/test_*.db-shm
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,314 @@
+[
+  {
+    "topic_id": 0,
+    "label": "time \u00b7 real \u00b7 space",
+    "keywords": [
+      "time",
+      "real",
+      "space",
+      "tracking",
+      "series",
+      "database"
+    ],
+    "size": 390
+  },
+  {
+    "topic_id": 1,
+    "label": "models \u00b7 openai \u00b7 chinese",
+    "keywords": [
+      "models",
+      "openai",
+      "chinese",
+      "frontier",
+      "california",
+      "post"
+    ],
+    "size": 499
+  },
+  {
+    "topic_id": 2,
+    "label": "rust \u00b7 faster \u00b7 library",
+    "keywords": [
+      "rust",
+      "faster",
+      "library",
+      "written",
+      "type",
+      "compiler"
+    ],
+    "size": 340
+  },
+  {
+    "topic_id": 3,
+    "label": "mcp \u00b7 api \u00b7 programming",
+    "keywords": [
+      "mcp",
+      "api",
+      "programming",
+      "server",
+      "live",
+      "python"
+    ],
+    "size": 1062
+  },
+  {
+    "topic_id": 4,
+    "label": "anthropic \u00b7 ipo \u00b7 price",
+    "keywords": [
+      "anthropic",
+      "ipo",
+      "price",
+      "record",
+      "stock",
+      "safety"
+    ],
+    "size": 411
+  },
+  {
+    "topic_id": 5,
+    "label": "data \u00b7 center \u00b7 centers",
+    "keywords": [
+      "data",
+      "center",
+      "centers",
+      "energy",
+      "states",
+      "breach"
+    ],
+    "size": 391
+  },
+  {
+    "topic_id": 6,
+    "label": "jensen \u00b7 huang \u00b7 nvidia",
+    "keywords": [
+      "jensen",
+      "huang",
+      "nvidia",
+      "ceo",
+      "elon",
+      "musk"
+    ],
+    "size": 258
+  },
+  {
+    "topic_id": 7,
+    "label": "code \u00b7 claude \u00b7 model",
+    "keywords": [
+      "code",
+      "claude",
+      "model",
+      "riemann",
+      "hypothesis",
+      "self"
+    ],
+    "size": 1262
+  },
+  {
+    "topic_id": 8,
+    "label": "agent \u00b7 coding \u00b7 multi",
+    "keywords": [
+      "agent",
+      "coding",
+      "multi",
+      "harness",
+      "memory",
+      "local"
+    ],
+    "size": 348
+  },
+  {
+    "topic_id": 9,
+    "label": "linux \u00b7 windows \u00b7 macos",
+    "keywords": [
+      "linux",
+      "windows",
+      "macos",
+      "desktop",
+      "kernel",
+      "os"
+    ],
+    "size": 440
+  },
+  {
+    "topic_id": 10,
+    "label": "browser \u00b7 web \u00b7 based",
+    "keywords": [
+      "browser",
+      "web",
+      "based",
+      "run",
+      "tools",
+      "map"
+    ],
+    "size": 647
+  },
+  {
+    "topic_id": 11,
+    "label": "open \u00b7 source \u00b7 alternative",
+    "keywords": [
+      "open",
+      "source",
+      "alternative",
+      "free",
+      "app",
+      "tool"
+    ],
+    "size": 321
+  },
+  {
+    "topic_id": 12,
+    "label": "stop \u00b7 ground \u00b7 faa",
+    "keywords": [
+      "stop",
+      "ground",
+      "faa",
+      "nationwide",
+      "traffic",
+      "air"
+    ],
+    "size": 254
+  },
+  {
+    "topic_id": 13,
+    "label": "agents \u00b7 coding \u00b7 md",
+    "keywords": [
+      "agents",
+      "coding",
+      "md",
+      "work",
+      "local",
+      "mcp"
+    ],
+    "size": 350
+  },
+  {
+    "topic_id": 14,
+    "label": "llm \u00b7 google \u00b7 llms",
+    "keywords": [
+      "llm",
+      "google",
+      "llms",
+      "search",
+      "computer",
+      "local"
+    ],
+    "size": 984
+  },
+  {
+    "topic_id": 15,
+    "label": "end \u00b7 gta \u00b7 internet",
+    "keywords": [
+      "end",
+      "gta",
+      "internet",
+      "history",
+      "life",
+      "does"
+    ],
+    "size": 956
+  },
+  {
+    "topic_id": 16,
+    "label": "nvidia \u00b7 china \u00b7 trump",
+    "keywords": [
+      "nvidia",
+      "china",
+      "trump",
+      "ceo",
+      "gpu",
+      "chips"
+    ],
+    "size": 538
+  },
+  {
+    "topic_id": 17,
+    "label": "video \u00b7 happened \u00b7 paul",
+    "keywords": [
+      "video",
+      "happened",
+      "paul",
+      "commodore",
+      "chess",
+      "games"
+    ],
+    "size": 378
+  },
+  {
+    "topic_id": 18,
+    "label": "microsoft \u00b7 outage \u00b7 tech",
+    "keywords": [
+      "microsoft",
+      "outage",
+      "tech",
+      "global",
+      "news",
+      "workers"
+    ],
+    "size": 483
+  },
+  {
+    "topic_id": 19,
+    "label": "app \u00b7 apple \u00b7 work",
+    "keywords": [
+      "app",
+      "apple",
+      "work",
+      "mac",
+      "intelligence",
+      "iphone"
+    ],
+    "size": 622
+  },
+  {
+    "topic_id": 20,
+    "label": "game \u00b7 daily \u00b7 puzzle",
+    "keywords": [
+      "game",
+      "daily",
+      "puzzle",
+      "online",
+      "math",
+      "style"
+    ],
+    "size": 378
+  },
+  {
+    "topic_id": 21,
+    "label": "software \u00b7 engineering \u00b7 age",
+    "keywords": [
+      "software",
+      "engineering",
+      "age",
+      "future",
+      "factory",
+      "reverse"
+    ],
+    "size": 352
+  },
+  {
+    "topic_id": 22,
+    "label": "free \u00b7 tool \u00b7 website",
+    "keywords": [
+      "free",
+      "tool",
+      "website",
+      "pro",
+      "europe",
+      "plan"
+    ],
+    "size": 388
+  },
+  {
+    "topic_id": 23,
+    "label": "security \u00b7 incident \u00b7 cyber",
+    "keywords": [
+      "security",
+      "incident",
+      "cyber",
+      "social",
+      "digital",
+      "attack"
+    ],
+    "size": 375
+  }
+]

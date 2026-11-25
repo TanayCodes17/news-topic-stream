@@ -1,0 +1,84 @@
+{
+  "trained_at_utc": "2026-11-25T15:46:46+00:00",
+  "seed": 42,
+  "n_documents": 12427,
+  "n_features": 5673,
+  "svd_components": 30,
+  "svd_variance_kept": 0.0718,
+  "k": 24,
+  "silhouette": 0.2349,
+  "davies_bouldin": 1.6968,
+  "calinski_harabasz": 533.57,
+  "novelty_percentile": 95,
+  "novelty_threshold": 0.9109,
+  "silhouette_sweep": {
+    "12": 0.1348,
+    "13": 0.1317,
+    "14": 0.1465,
+    "15": 0.1622,
+    "16": 0.1645,
+    "17": 0.1778,
+    "18": 0.1814,
+    "19": 0.1933,
+    "20": 0.2058,
+    "21": 0.2115,
+    "22": 0.2132,
+    "23": 0.2271,
+    "24": 0.2349
+  },
+  "cluster_sizes": [
+    1262,
+    1062,
+    984,
+    956,
+    647,
+    622,
+    538,
+    499,
+    483,
+    440,
+    411,
+    391,
+    390,
+    388,
+    378,
+    378,
+    375,
+    352,
+    350,
+    348,
+    340,
+    321,
+    258,
+    254
+  ],
+  "snapshot_sha256": "d1bdea51408b58d6ff152322820135acd2c5db5fb08b68ee1305ca733ac93814",
+  "holdout": {
+    "n": 1000,
+    "assigned_rate": 0.962,
+    "novel_rate": 0.093,
+    "ms_per_item": 0.063,
+    "top_topics": [
+      {
+        "label": "llm \u00b7 google \u00b7 llms",
+        "count": 92
+      },
+      {
+        "label": "code \u00b7 claude \u00b7 model",
+        "count": 92
+      },
+      {
+        "label": "mcp \u00b7 api \u00b7 programming",
+        "count": 80
+      },
+      {
+        "label": "end \u00b7 gta \u00b7 internet",
+        "count": 73
+      },
+      {
+        "label": "app \u00b7 apple \u00b7 work",
+        "count": 51
+      }
+    ]
+  }
+}

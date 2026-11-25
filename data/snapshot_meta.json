@@ -1,0 +1,13 @@
+{
+  "source": "https://hn.algolia.com/api/v1/search_by_date",
+  "query": {
+    "tags": "story"
+  },
+  "fetched_at_utc": "2026-11-25T15:35:59+00:00",
+  "rows_train": 12428,
+  "rows_holdout": 1000,
+  "created_at_min": "2026-11-12T08:34:10Z",
+  "created_at_max": "2026-11-24T17:46:41Z",
+  "sha256_train_csv": "d1bdea51408b58d6ff152322820135acd2c5db5fb08b68ee1305ca733ac93814",
+  "sha256_holdout_csv": "e03fd25e063e6e618d9990a5d6d00e8c508d2a4ed594222eacbdf0c78dcbf125"
+}
