@@ -2,6 +2,13 @@
 
 Discover news themes without labels, then apply the frozen model to a live feed.
 
+> **Course project — question 32, "News Article Topic Discovery".**
+> *Real-world problem:* automatically group news articles into themes without
+> predefined category labels.
+> *Suggested algorithms:* TF-IDF, K-Means, Hierarchical Clustering, LSA.
+> This implementation uses **TF-IDF → LSA → K-Means** and adds a live serving
+> layer, so a model trained on fixed data runs against genuinely dynamic input.
+
 A K-Means model is trained **once** on a committed snapshot of news headlines. A
 separate service loads those saved artifacts **read-only** and assigns every new
 headline that arrives from a live API to one of the discovered topics — flagging
@@ -88,6 +95,19 @@ python -m src.fetch_snapshot    # re-freeze the dataset (writes the CSV + hash)
 python -m src.train             # retrain from the frozen CSV
 pytest -q                       # 21 tests, ~5 s, offline
 ```
+
+## Demo in 60 seconds
+
+1. Start the API. The log line `live poll: 40 fetched, 40 new` is the model
+   scoring real headlines it has never seen.
+2. Start the dashboard. You get 24 topics, a live feed, and `NOVEL` badges.
+3. Watch **Headlines scored** climb every 30 seconds without any retraining.
+4. Click **Fetch now** to force a poll instead of waiting for the timer.
+5. Point at a `NOVEL` badge and explain the distance threshold: the model is
+   saying "this does not look like anything I was trained on".
+
+If the venue Wi-Fi fails mid-demo, switch to the replay source — the demo never
+depends on the network.
 
 ## API
 
@@ -182,6 +202,14 @@ under future work.
 words that appear in more than 5 % of headlines, which is what eliminated
 generic filler such as `new`, `open source` and `read` without curating a list.
 
+**Why K-Means and not hierarchical clustering.** Agglomerative clustering cannot
+assign a *new* headline without rebuilding the tree, which would mean re-running
+the offline stage for every live item — the opposite of what this project needs.
+K-Means keeps centroids that a single `transform` plus nearest-centroid lookup
+can score in 0.06 ms, which is what makes the live path possible. (LSA here is
+just SVD — `TruncatedSVD` — the standard linear-algebra step before clustering
+sparse text.)
+
 ## Repository layout
 
 ```
@@ -245,6 +273,17 @@ used to make moderation or editorial decisions about real publications.
 3. **Better representations** — sentence embeddings would likely beat TF-IDF on
    eight-word titles.
 4. **Human-in-the-loop naming** — let a user rename a cluster and persist it.
+
+## Troubleshooting
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| `[Errno 10048]` on startup | port already in use | use `--port 8011` and start the dashboard with `API_URL=http://127.0.0.1:8011` |
+| Dashboard says "API unreachable" | API not running, or wrong port | check the URL shown in the sidebar |
+| `FileNotFoundError: Missing artifacts` | `artifacts/` absent | `python -m src.train` |
+| Dashboard empty for a minute | no new stories since the last poll | click **Fetch now**, or run the replay source |
+| `pickle` errors after upgrading | scikit-learn version mismatch | `pip install -r requirements.txt` |
+| Mojibake in the terminal (`·` → `?`) | Windows console codepage | the CLI forces UTF-8; use Windows Terminal if it persists |
 
 ## Reproducibility
 
